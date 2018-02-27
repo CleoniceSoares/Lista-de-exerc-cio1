@@ -1,0 +1,24 @@
+class Pilha:
+    def __init__(self):
+        self.itens = list()
+    def isEmpty(self,item):
+        if len(pilha) == 0:
+            return True
+        return False
+    def push (self,item):
+        self.itens.append(item)
+    def pop(self):
+        self.itens.pop()
+    def peek(self):
+        self.itens[-1]
+    def length(self,item):
+        return len(self.itens)
+
+pilha = Pilha()
+pilha.push(1)
+pilha.push(2)
+pilha.push(3)
+pilha.push(4)
+pilha.push(5)
+pilha.pop()
+print(pilha.itens)
